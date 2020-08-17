@@ -1,17 +1,15 @@
-*{
-    margin:0;
+* {
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
 }
 
-body{
-    background:  #dea5a4;
+body {
+    background: #dea5a4;
     font-family: 'Open Sans', sans-serif;
-    
 }
 
-.contenedor{
+.contenedor {
     padding: 40px 0;
     width: 90%;
     max-width: 1000px;
@@ -19,8 +17,7 @@ body{
     overflow: hidden;
 }
 
-.titulo{
-
+.titulo {
     color: #4b1758;
     font-size: 30px;
     text-align: center;
@@ -29,43 +26,37 @@ body{
 
 /* Header */
 
-header{
+header {
     width: 100%;
     height: 600px;
-    background: #355C7D; 
+    background: #355C7D;
     /* fallback for old browsers */
-    background: linear-gradient(to right, hsl(340, 4%, 51%, 0.3), hsl(271, 32%, 46%, 0.65), hsl(208, 51%, 41%, 0.86)), url(assets/images/portada.jpg);  
+    background: linear-gradient(to right, hsl(340, 4%, 51%, 0.3), hsl(271, 32%, 46%, 0.65), hsl(208, 51%, 41%, 0.86)), url(assets/images/portada.jpg);
     /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, hsl(340, 4%, 51%, 0.3), hsl(271, 32%, 46%, 0.65), hsl(208, 51%, 41%, 0.86)), url(assets/images/portada.jpg);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     background-size: cover;
     background-attachment: fixed;
     position: relative;
-
 }
 
-nav{
-
+nav {
     text-align: right;
     padding: 30px 50px 0 0;
-    
 }
 
-nav > a{
-
+nav>a {
     color: white;
     font-weight: 500;
     text-decoration: none;
     margin-right: 10px;
 }
 
-nav > a:hover{
-
+nav>a:hover {
     text-decoration: underline;
 }
 
-header .textos-header{
-
+header .textos-header {
     font-family: 'Oswald', sans-serif;
     display: flex;
     height: 430px;
@@ -77,40 +68,37 @@ header .textos-header{
     color: white;
 }
 
-.textos-header h1{
+.textos-header h1 {
     font-size: 80px;
-    
 }
 
-.textos-header h2{
+.textos-header h2 {
     font-size: 20px;
     font-weight: 300;
-    
 }
 
-.wave{
-    position:absolute;
-    bottom:0;
+.wave {
+    position: absolute;
+    bottom: 0;
     width: 100%;
 }
 
 /* Pets */
 
-main .pets{
+main .pets {
     padding: 30px 0 30px 0;
 }
 
-.title{
+.title {
     font-size: 110px;
     text-align: center;
 }
 
-.huella{
-
+.huella {
     width: 100px;
 }
 
-.contenedor-pets{
+.contenedor-pets {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -118,66 +106,68 @@ main .pets{
     margin: 10px;
     padding: 30px 0;
     width: 99%;
-    height:2100px;
+    height: 2100px;
 }
 
-.photo{
-
+.photo {
     background-color: rgb(29, 28, 28);
     text-align: center;
-    width: 20%; 
-    display:flex;
-    flex-direction:column;
-    align-items:center;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: space-around;
 }
 
-.dogs{
+.dogs {
     width: 150px;
     height: 150px;
-    padding:10px; 
+    padding: 10px;
 }
 
-.name{
+.name {
+    display: flex;
     background-color: white;
-    font-size:28px;
+    font-size: 28px;
     align-items: center;
     border-radius: 4px;
     padding: 5px;
 }
 
-.icon{
-
+.icon {
     width: 30px;
 }
 
-.description{
- 
+.description {
+    justify-content: space-around;
     background-color: rgb(83, 68, 68);
     border: black solid 5px;
     width: 63%;
     display: grid;
-    grid-template-columns: 22% 78%;
-    padding: 20px;
+    flex-flow: row wrap;
+    grid-template-columns: 35% 65%;
     font-size: 15px;
 }
 
-.photo , .description {
-    
+.description h3 {
+    font-weight: bolder;
+}
+
+.photo, .description {
     border-radius: 15px;
     height: 260px;
-    margin: 40px;    
+    margin: 40px;
 }
 
 /* Galeria */
 
-.galeria-photo{
+.galeria-photo {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
 }
 
-.imagen-photo{
+.imagen-photo {
     width: 30%;
     margin-bottom: 10px;
     height: 300px;
@@ -187,19 +177,18 @@ main .pets{
     box-shadow: 0 0 7px 0 rgba(0, 0, 0, .5);
 }
 
-.imagen-photo > img{
-
+.imagen-photo>img {
     width: 100%;
     height: 300px;
     object-fit: cover;
     display: block;
 }
 
-.hover-galeria{
+.hover-galeria {
     position: absolute;
     width: 100%;
     height: 100%;
-    top:0;
+    top: 0;
     transform: scale(0);
     background: hsla(273, 91%, 27%, 0.7);
     transition: transform .5s;
@@ -209,33 +198,32 @@ main .pets{
     flex-direction: column;
 }
 
-.hover-galeria > img{
+.hover-galeria>img {
     width: 50px;
 }
 
-.hover-galeria p{
-    color:#fff;
+.hover-galeria p {
+    color: #fff;
 }
 
-.imagen-photo:hover .hover-galeria{
+.imagen-photo:hover .hover-galeria {
     transform: scale(1);
-
 }
 
 /* Datos curiosos */
 
-.cards{
+.cards {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly; 
+    justify-content: space-evenly;
 }
 
-.cards .card{
-    background:  rgb(83, 68, 68);
+.cards .card {
+    background: rgb(83, 68, 68);
     border: black solid 5px;
     border-radius: 10px;
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.6);
-    display:flex;
+    display: flex;
     width: 46%;
     height: 200px;
     align-items: center;
@@ -243,28 +231,28 @@ main .pets{
     margin-bottom: 10px;
 }
 
-.cards .card img{
+.cards .card img {
     width: 100px;
     height: 100px;
     object-fit: cover;
-    border:  black solid 3px;
+    border: black solid 3px;
     border-radius: 50%;
-    display:block;
+    display: block;
     background: rgb(204, 188, 188);
-    padding:10px;
-
+    padding: 10px;
 }
 
-.cards .card > .contenido-texto-card{
+.cards .card>.contenido-texto-card {
     width: 60%;
 }
 
-.cards .card > .contenido-texto-card h4{
-    color:black;
+.cards .card>.contenido-texto-card h4 {
+    text-align: center;
+    color: black;
     font-size: 30px;
 }
 
-.cards .card > .contenido-texto-card p{
+.cards .card>.contenido-texto-card p {
     font-weight: 300;
     padding-top: 5px;
     color: #fff;
@@ -272,14 +260,14 @@ main .pets{
 
 /* Footer */
 
-footer{
+footer {
     background: #414141;
     padding: 60px 0 30px 0;
     margin: auto;
     overflow: hidden;
 }
 
-.contenedor-footer{
+.contenedor-footer {
     display: flex;
     width: 90%;
     justify-content: space-evenly;
@@ -288,175 +276,144 @@ footer{
     border-bottom: 1px solid #ccc;
 }
 
-.content-foo{
+.content-foo {
     text-align: center;
 }
 
-.content-foo h4{
+.content-foo h4 {
     color: #fff;
     border-bottom: 3px solid #af20d3;
     font-weight: 200;
     margin-bottom: 10px;
-    padding-bottom: 5px;   
+    padding-bottom: 5px;
 }
 
-.content-foo p{
+.content-foo p {
     color: #ccc;
 }
 
-.titulo-final{
+.titulo-final {
     text-align: center;
     font-size: 24px;
     margin: 20px 0 0 0;
     color: #9e9797;
 }
 
-@media screen and (max-width: 900px){
-
-    header{
+@media screen and (max-width: 900px) {
+    header {
         background-position: center;
         height: 670px;
     }
-
-    header .textos-header{
+    header .textos-header {
         width: 98%;
     }
-
-    .title{
+    .title {
         font-size: 70px;
     }
-
-    .huella{
+    .huella {
         width: 38px;
     }
-
     /* Pets */
-
-    .contenedor-pets{
+    .contenedor-pets {
         height: 5135px;
     }
-
-    .photo{
+    .photo {
         width: 40%;
     }
-
-    .description{
+    .description {
         width: 83%;
         height: 510px;
         grid-template-columns: 36% 60%;
     }
-
-    .photo , .description{
+    .photo, .description {
         margin-bottom: 3px;
     }
-
     /* Galería */
-
-    .imagen-photo{
+    .imagen-photo {
         width: 80%;
         margin-bottom: 30px;
     }
-
     /* Datos curiosos */
-
-    .cards .card{
+    .cards .card {
         width: 90%;
     }
 }
 
-@media screen and (max-width:500px){
-
-    nav{
+@media screen and (max-width:500px) {
+    nav {
         text-align: center;
-        padding: 30px 0 0 0; 
+        padding: 30px 0 0 0;
     }
-
-    nav > a{
+    nav>a {
         margin-right: 5px;
         color: #fff;
     }
-
-    header{
+    header {
         height: 570px;
     }
-
-    header .textos-header{
+    header .textos-header {
         width: 97%;
     }
-
-    .textos-header h1{
+    .textos-header h1 {
         font-size: 35px;
     }
-
-    .textos-header h2{
+    .textos-header h2 {
         font-size: 20px;
     }
-
-    .title{
+    .title {
         font-size: 40px;
     }
-
-    .huella{
+    .huella {
         width: 30px;
     }
-
     /* Pets */
-
-    .contenedor-pets{
+    .contenedor-pets {
         height: 7350px;
     }
-
-    .photo{
+    .photo {
         width: 60%;
         height: 230px;
     }
-
-    .dogs{
+    .dogs {
         padding: 15px;
     }
-
-    .name{
+    .name {
         font-size: 20px;
     }
-
-    .description{
+    .description {
+        margin: 0px;
         grid-template-columns: 100%;
         height: 910px;
     }
-
-    .description > div{
+    .description>div {
         margin-bottom: 6px;
     }
-
-    .cards .card{
+    .cards .card {
         flex-direction: column;
         height: 330px;
     }
 
-     /* Footer */
-
-     .contenedor-footer{
-        flex-direction: column;
-        border:none;
+    .card>.contenido-texto-card p {
+        text-align: center;
     }
-
-    .content-foo{
+    /* Footer */
+    .contenedor-footer {
+        flex-direction: column;
+        border: none;
+    }
+    .content-foo {
         margin-bottom: 20px;
         text-align: center;
     }
-
-    .content-foo h4{
+    .content-foo h4 {
         border: none;
     }
-
-    .content-foo p{
-        color:#ccc;
+    .content-foo p {
+        color: #ccc;
         border-bottom: 1px solid #f2f2f2;
         padding-bottom: 20px;
     }
-
-    .titulo-final{
+    .titulo-final {
         font-size: 20px;
     }
-
 }
